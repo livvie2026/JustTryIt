@@ -1,0 +1,44 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Production
+/build
+/dist
+/out
+
+# Remotion
+/.remotion
+/remotion-lambda-bundle
+/remotion-lambda-bundle.zip
+
+# Misc
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor
+.idea
+.vscode
+*.swp
+*.swo
+
+# Project Specific
+# 忽略较大的原始素材文件 (用户自行准备)
+/public/assets/sources/*
+!/public/assets/sources/.gitkeep
+
+# 如果不希望提交生成的语音文件（可以重新生成），可以取消注释下面这行
+/public/voiceover/

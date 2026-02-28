@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"module": "Preserve",
+		"target": "ESNext",
+		"moduleResolution": "Bundler",
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
+		"jsx": "react-jsx",
+		"noEmit": true
+	},
+	"include": ["src", "skills"]
+}

@@ -1,0 +1,30 @@
+{
+	"repository": {
+		"url": "https://github.com/remotion-dev/remotion/tree/main/packages/skills"
+	},
+	"scripts": {
+		"dev": "remotion studio",
+		"build": "remotion render",
+		"voiceover": "npx tsx scripts/generate-voiceover.ts"
+	},
+	"name": "@remotion/skills",
+	"private": true,
+	"version": "4.0.427",
+	"devDependencies": {
+		"eslint": "^8.56.0",
+		"@remotion/bundler": "^4.0.0",
+		"remotion": "^4.0.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"@remotion/shapes": "^4.0.0",
+		"@remotion/three": "^4.0.0",
+		"@remotion/cli": "^4.0.0",
+		"@remotion/lottie": "^4.0.0",
+		"@remotion/google-fonts": "^4.0.0",
+		"@remotion/media": "^4.0.0",
+		"mediabunny": "^1.0.0",
+		"edge-tts": "^2.0.0",
+		"tsx": "^4.7.0",
+		"@types/node": "^20.0.0"
+	}
+}
