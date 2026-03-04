@@ -4,8 +4,7 @@ import { MyAnimation as TypewriterAnimation } from "../skills/remotion/rules/ass
 import { MyAnimation as WordHighlightAnimation } from "../skills/remotion/rules/assets/text-animations-word-highlight";
 import { ArticleVideo } from "./compositions/ArticleVideo";
 import { articleDemo } from "./data/article-demo";
-import { debriefingWei } from "./data/debriefing-wei";
-import { surfinSmartAuto } from "./data/surfin-smart-auto";
+import { videoGeneratorSkill } from "./data/video-generator-skill";
 
 export const RemotionRoot = () => {
   const articleDuration = articleDemo.blocks.reduce(
@@ -13,12 +12,7 @@ export const RemotionRoot = () => {
     0
   );
 
-  const debriefingWeiDuration = debriefingWei.blocks.reduce(
-    (acc, block) => acc + block.durationInFrames,
-    0
-  );
-
-  const surfinSmartAutoDuration = surfinSmartAuto.blocks.reduce(
+  const videoGeneratorSkillDuration = videoGeneratorSkill.blocks.reduce(
     (acc, block) => acc + block.durationInFrames,
     0
   );
@@ -65,25 +59,14 @@ export const RemotionRoot = () => {
         }}
       />
       <Composition
-        id="DebriefingWei"
+        id="VideoGeneratorSkill"
         component={ArticleVideo}
-        durationInFrames={debriefingWeiDuration}
+        durationInFrames={videoGeneratorSkillDuration}
         fps={30}
         width={1280}
         height={720}
         defaultProps={{
-          article: debriefingWei,
-        }}
-      />
-      <Composition
-        id="SurfinSmartAuto"
-        component={ArticleVideo}
-        durationInFrames={surfinSmartAutoDuration}
-        fps={30}
-        width={1280}
-        height={720}
-        defaultProps={{
-          article: surfinSmartAuto,
+          article: videoGeneratorSkill,
         }}
       />
     </>
