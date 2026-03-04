@@ -1,4 +1,4 @@
-# SurfinSmartAuto Video Generator
+# ArticleVideo Video Generator
 
 本项目是一个基于 **Remotion** 的自动化视频生成工具，专为生成技术分享、项目汇报等演示视频而设计。它能够将结构化的 JSON 数据转化为包含动画、图表、演示录屏和语音解说的专业视频。
 
@@ -29,16 +29,16 @@ npm install
 npm run dev
 ```
 启动后，浏览器会自动打开 `http://localhost:3000`。
-在左侧列表中选择 **`SurfinSmartAuto`** 即可查看演示效果。
+在左侧列表中选择 **`ArticleVideo`** 即可查看演示效果。
 
 ### 3. 生成视频 (导出 MP4)
 
-使用以下命令将 `SurfinSmartAuto` 组合渲染为 MP4 文件：
+使用以下命令将 `ArticleVideo` 组合渲染为 MP4 文件：
 
 ```bash
-npm run build -- src/index.ts SurfinSmartAuto out/SurfinSmartAuto.mp4
+npm run build -- src/index.ts ArticleVideo out/ArticleVideo.mp4
 ```
-*   生成的视频将保存在 `out/SurfinSmartAuto.mp4`。
+*   生成的视频将保存在 `out/ArticleVideo.mp4`。
 *   渲染过程可能需要几分钟，取决于机器性能和视频长度。
 
 ## 📂 项目结构
@@ -52,7 +52,7 @@ npm run build -- src/index.ts SurfinSmartAuto out/SurfinSmartAuto.mp4
 │   ├── components/         # 基础组件 (Title, Text, VideoClip, etc.)
 │   ├── compositions/       # 视频组合逻辑 (ArticleVideo)
 │   ├── data/               # 视频脚本数据 (JSON)
-│   │   └── surfin-smart-auto.ts  # SurfinSmartAuto 的核心脚本
+│   │   └── article-demo.ts       # ArticleVideo 的核心脚本
 │   ├── types/              # TypeScript 类型定义 (Schema)
 │   ├── Root.tsx            # 注册所有视频组合的入口
 │   └── index.ts            # Remotion 渲染入口
@@ -61,7 +61,7 @@ npm run build -- src/index.ts SurfinSmartAuto out/SurfinSmartAuto.mp4
 
 ## 📝 如何修改视频内容？
 
-1.  打开 `src/data/surfin-smart-auto.ts`。
+1.  打开 `src/data/article-demo.ts`。
 2.  修改 `blocks` 数组中的内容。
     *   **修改文字**: 更新 `text` 字段。
     *   **替换素材**: 更新 `src` 字段（指向 `public/assets/` 下的文件）。
@@ -90,4 +90,4 @@ npm run voiceover
 *该命令会扫描数据文件中的 `subtitle` 字段，调用 TTS 服务生成音频并保存到 `public/voiceover/` 目录。*
 
 ---
-**SurfinSmartAuto Team**
+**VideoGeneratorSkill Team**
